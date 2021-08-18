@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <form action=""></form>
+    <div class="container" style="display: flex; flex-flow: row wrap; justify-content: center;
+    align-items: center ; font-family: 'Space Mono', monospace; background-color: white; border-radius: 10px; padding: 15px;">
+      <div id="left">
+        <label for= "Bill"> Bill </label>
+          <input id= "bill" type="text" placeholder="$" required/>
+            <br><br>
+        
+            <div 
+          <label for= "Sel-Type"> Select Type % </label>
+          <br>
+          <div class="tip-btns"  style="display: grid; grid-template-columns: repeat(3, 1fr);">
+              <button class="raw-btn my-btn tip">5%</button>
+              <button class="raw-btn my-btn tip">10%</button> 
+              <button class="raw-btn my-btn tip">15%</button>
+              <button class="raw-btn my-btn tip">25%</button>
+              <button class="raw-btn my-btn tip">50%</button>
+              <button class="raw-btn my-btn tip custom">Custom</button>
+            </div> 
+          <br><br>
+        <label for="No.-of-Peeps">Number of People</label>
+          <input id= "noOfPeople" type="number" placeholder="$" required/>
+      </div>
+          <br><br>  
+
+      <div id="right" style="border-radius: 10px; margin: 10px; padding: inherit; background-color: hsl(183, 100%, 15%); display: grid; width: 50%; grid-auto-columns: 100px; align-items: center ; justify-content: start; padding: 10px; justify-self: right;">
+
+        <label for="Tip-amt">Tip Amount <span>/person</span></label>
+            <br><br>
+        <label for="T/per">Total <span>/person</span></label>
+            <br><br>
+        <button type= "button" class="my-btn reset" style = "background-color: hsl(172, 67%, 45%);
+        align-self:center;">Reset</button>
+      </div>
+    </div>
+  </form>
+  
+  <!-- <br><br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Michael Kofi Nyanyuie</a>.
+  </div> -->
+</body>
+</html>

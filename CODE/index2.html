@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style2.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <div id="left">
+                <label for= "Bill"> Bill </label>
+                <input id= "bill" type="text" placeholder="$" required/>
+
+                <label for= "Sel-Type"> Select Type % </label>
+                <div class="sel-tip">
+                    <button class="raw-btn my-btn tip">5%</button>
+                    <button class="raw-btn my-btn tip">10%</button> 
+                    <button class="raw-btn my-btn tip">15%</button>
+                    <button class="raw-btn my-btn tip">25%</button>
+                    <button class="raw-btn my-btn tip">50%</button>
+                    <button class="raw-btn my-btn tip custom">Custom</button>
+                </div>
+            
+
+                <label for="No.-of-Peeps">Number of People</label>
+                <input id= "noOfPeople" type="number" placeholder="$" required/>
+            </div>
+            
+            <div id="right">
+                <label for="Tip-amt">Tip Amount <span>/person</span></label>
+                <label for="T/per">Total <span>/person</span></label>
+                <button type= "button" class="my-btn reset">Reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+    
