@@ -1,0 +1,174 @@
+$light-grayish-cyan : hsl(185, 41%, 84%);
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: $light-grayish-cyan;
+    font-family: 'Space Mono', monospace;
+}
+
+
+.container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: grey;
+    font-family: 'Space Mono', monospace;
+    // max-width: 1440px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 62.5em;
+    height: 31.25em;
+    align-self: center;
+}
+
+#left{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+    grid-gap: 10px;
+
+    .bill::placeholder{
+        background-image: url(images/icon-dollar.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 9px ;
+
+    }
+
+    .noOfPeople::placeholder{
+        display: flex;
+        align-items: center;
+        // font-size: 5px;
+        background-image: url(images/icon-person.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 9px ;
+    }
+
+    input:hover{
+        border: 2px solid hsl(185, 64%, 56%);
+    }
+
+    // input:active{
+    // }
+
+    // input:invalid{
+    //     border-color: rgb(255, 51, 0)
+    // }
+}
+
+
+.sel-tip{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8em;
+}
+
+input{
+    border: none;
+    margin: 5px 0;
+    background-color: hsla(0, 24%, 93%, 0.705);
+    border-radius: 0.4em;
+    height: 20px;
+    padding: 0.9rem;
+    width: 92.8%;
+    font-weight: bold;
+    font-size: 20px;
+    color: hsl(172, 67%, 45%);
+    text-align: right;
+}
+
+::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+
+#right{
+    border-radius: 10px; 
+    margin: 10px; 
+    background-color: hsl(183, 100%, 15%); 
+    display: grid; 
+    width: 40%;
+    padding: 20px 40px 10px 40px;
+    color: white;
+
+    input{
+        border:none;
+        background-color: inherit;
+        width: 50px;
+    }
+}
+
+
+
+
+button:hover{
+    background-color: hsl(185, 64%, 56%);
+    color: hsl(183, 100%, 15%) ;
+}
+
+// button::after{
+
+// }
+
+.DAMN{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin btn-reset{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.reset{
+    background-color: hsl(172, 67%, 45%);
+    align-self: center;
+    justify-self: stretch;
+}
+
+.raw-btn{
+    @include btn-reset;
+    padding: 10px;
+    background-color: $very-dark-cyan;
+}
+
+.my-btn{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin:2px 0;
+    border: solid 2px transparent;
+    border-radius: 0.4em;
+    padding: 0.5em 1em;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span{
+    color: rgba(204, 197, 197, 0.658);
+    font-size: 90%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
